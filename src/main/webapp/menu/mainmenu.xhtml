@@ -1,0 +1,28 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" xmlns:bnu="http://bootsfaces.net/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<bnu:navBar brand-img-style="height: 20px"
+		brand-img="resources/images/logo_only_.png" brandHref="/" inverse="false"
+		position="top" sticky="true"
+		style-class="navbar navbar-default navbar-fixed-top">
+
+		<bnu:container fluid="true" style-class="technoblue">
+			<h:form>
+				<bnu:navbarLinks>
+					<bnu:navLink style="technoblue" style-class="technoblue" value="About US" onclick="ajax:pageBean.home()"
+						update=":techno_content"></bnu:navLink>
+					<bnu:navLink value="Portfolio" onclick="ajax:pageBean.portfolio()"
+						update=":techno_content"></bnu:navLink>
+					<bnu:navLink value="Contact Us" onclick="ajax:pageBean.contactus()"
+						update=":techno_content"></bnu:navLink>
+				</bnu:navbarLinks>
+			</h:form>
+		</bnu:container>
+
+
+	</bnu:navBar>
+
+</ui:composition>

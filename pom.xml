@@ -43,7 +43,7 @@
 	</repositories>
 
 	<build>
-		<finalName>myapp</finalName>
+		<finalName>technovation</finalName>
 
 		<pluginManagement>
 			<plugins>
