@@ -28,7 +28,9 @@ public class PageBean implements Serializable {
 	}
 
 	public String getPage() {
-		return page;
+		final String temp_page = page;
+		page = "home";
+		return temp_page;
 	}
 
 	public void setPage(String page) {
