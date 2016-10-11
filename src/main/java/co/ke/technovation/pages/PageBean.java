@@ -30,7 +30,7 @@ public class PageBean implements Serializable {
 	public String getPage() {
 		final String temp_page = page;
 		page = "home";
-		return page;
+		return temp_page;
 	}
 
 	public void setPage(String page) {
